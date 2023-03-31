@@ -11,23 +11,27 @@ body{
     "main"
     "footer";
 
-    grid-template-rows: 100px 1fr 50px;
-    display: grid;
+    grid-template-rows: 50px 1fr 10px;
   }
   
   .top{
     grid-area: top;
     background-color: rgb(17, 0, 255);
-    height: 100px;
+    height: 50px;
     width: 100vw;
+    overflow: hidden;
   }
 
   .main{
+    height: 100vh;
     grid-area: main;
     display: flex;
     flex-direction: column; /* alteração aqui */
     justify-content: center; /* alteração aqui */
     align-items: center;
+    background-color: brown;
+    gap: 50px;
+    padding: 50px;
   }
   
   #panel{
@@ -37,8 +41,14 @@ body{
     max-width: 100vw;
     min-width: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    
+  }
+  #panel h1 {
+    margin: 0;
+    height: inherit;
+    width: inherit;
+    font-size: 2vw;
   }
   
   #input{
@@ -52,7 +62,22 @@ body{
     align-items: center;
   }
 
+  #input_box{
+    height: inherit;
+    width: inherit;
+    max-width: 100vw;
+    min-width: 300px;
+    font-size: 20px;
+  }
+
 .footer{
+    height: 50px;
+    overflow: hidden;
     grid-area: footer;
+    background-color: peru;
 }
-  
+
+#panel span {
+  margin-right: 10px; 
+  font-size: 40px;
+}
