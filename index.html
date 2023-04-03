@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="words.css">
-    
+    <script src="chance.js"></script>
+<script>
+    console.log(chance.bool());
+</script>
+
 
 </head>
 <body>
@@ -19,23 +23,29 @@
     </header>
 
     <main class="main">
+
+        <div id="pontos"></div>
+
         <div id="panel">
-            <span id="wd1"> </span>
-            <span id="wd2"> </span>
-            <span id="wd3"> </span>
-            <span id="wd4"> </span>
-            <span id="wd5"> </span>
-            <span id="wd6"> </span>
+            <span id="wd1"></span>
+            <span id="wd2"></span>
+            <span id="wd3"></span>
+            <span id="wd4"></span>
+            <span id="wd5"></span>
+            <span id="wd6"></span>
         </div>
         <div id="input">
             <input id="input_box"type="text">
         </div>
     </main>
 
+
+
     <footer class="footer">
         <div>
             TESTE
         </div>
+
     </footer>
 
     <script src="index.js"></script>

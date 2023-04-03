@@ -1,0 +1,5 @@
+Gera 10 palavras;
+Pega a palavra da primeira posicao e compara com o input após apertar enter ;
+independente se está certa ou não, move a lista toda para esquerda, portando palavra[0]  = palavra[1];
+última posição = newWord;
+fica fazendo a verificação no index[0];
