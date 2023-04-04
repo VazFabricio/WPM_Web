@@ -23,7 +23,7 @@ inputAtual.addEventListener('keydown', function(event) {
     let inputAtual = document.getElementById('input').value.toLowerCase();
     if (atual === inputAtual) {
       pontos++;
-      pontuacao.innerHTML = pontos;
+      console.log(pontos)
       posicaoAtual++;
     }
     inputAtual.value = ''; // limpa o input
